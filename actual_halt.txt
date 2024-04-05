@@ -1,0 +1,5519 @@
+ARM Simulator
+
+Read 16 words from program into memory.
+
+ARM-SIM> 
+Simulating...
+
+cycle 0
+
+WB:  X0, ..., writeBack: 0
+MEM:  X0, ...
+EX: , memRead? 0, rt: 0, rn: 0, rm: 100
+DE:  X0, ... current_add: 0x0
+Caching address: 0x400000
+iCache miss
+cycle 1
+
+WB:  X0, ..., writeBack: 0
+MEM:  X0, ...
+EX: , memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 2
+
+WB:  X0, ..., writeBack: 0
+MEM:  X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 3
+
+WB:  X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 4
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 5
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 6
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 7
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 8
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 9
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 10
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+Caching address: 0x400000
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400000, predicted_(next)_address: 0x400004
+cycle 11
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: MOVZ X2, ... current_add: 0x400000
+Caching address: 0x400004
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400004, predicted_(next)_address: 0x400008
+cycle 12
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: MOVZ, memRead? 0, rt: 2, rn: 0, rm: 100
+DE: MOVZ X3, ... current_add: 0x400004
+Caching address: 0x400008
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400008, predicted_(next)_address: 0x40000c
+cycle 13
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: MOVZ X2, ...
+EX: MOVZ, memRead? 0, rt: 3, rn: 0, rm: 100
+DE: MOVZ X1, ... current_add: 0x400008
+Caching address: 0x40000c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40000c, predicted_(next)_address: 0x400010
+cycle 14
+
+WB: MOVZ X2, ..., writeBack: 1
+MEM: MOVZ X3, ...
+EX: MOVZ, memRead? 0, rt: 1, rn: 0, rm: 100
+DE: LSL X1, ... current_add: 0x40000c
+Caching address: 0x400010
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400010, predicted_(next)_address: 0x400014
+cycle 15
+
+WB: MOVZ X3, ..., writeBack: 1
+MEM: MOVZ X1, ...
+EX: LSL, memRead? 0, rt: 1, rn: 1, rm: 100
+DE: MOVZ X4, ... current_add: 0x400010
+Caching address: 0x400014
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400014, predicted_(next)_address: 0x400018
+cycle 16
+
+WB: MOVZ X1, ..., writeBack: 1
+MEM: LSL X1, ...
+EX: MOVZ, memRead? 0, rt: 4, rn: 0, rm: 100
+DE: MOVZ X5, ... current_add: 0x400014
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 17
+
+WB: LSL X1, ..., writeBack: 1
+MEM: MOVZ X4, ...
+EX: MOVZ, memRead? 0, rt: 5, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 18
+
+WB: MOVZ X4, ..., writeBack: 1
+MEM: MOVZ X5, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache miss
+cycle 19
+
+WB: MOVZ X5, ..., writeBack: 1
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+cycle 20
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache miss
+fetch_stalling 7
+mem stalling 9
+cycle 21
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 6
+mem stalling 8
+cycle 22
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 5
+mem stalling 7
+cycle 23
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 4
+mem stalling 6
+cycle 24
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 3
+mem stalling 5
+cycle 25
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 2
+mem stalling 4
+cycle 26
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 1
+mem stalling 3
+cycle 27
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+fetch_stalling 0
+mem stalling 2
+cycle 28
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+mem stalling 1
+cycle 29
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+mem stalling 0
+cycle 30
+
+WB: dCache stall bubble X0, ..., writeBack: 0
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: cache bubble X0, ... current_add: 0x0
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 31
+
+WB: STUR X4, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: cache bubble, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 32
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: cache bubble X0, ...
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 33
+
+WB: cache bubble X0, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 34
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 35
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 36
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 37
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 38
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 39
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 40
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 41
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 42
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 43
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 44
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 45
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 46
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 47
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 48
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 49
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 50
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 51
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 52
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 53
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 54
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 55
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 56
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 57
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 58
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 59
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 60
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 61
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 62
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 63
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 64
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 65
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 66
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 67
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 68
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 69
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 70
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 71
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 72
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 73
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 74
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 75
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 76
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 77
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 78
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 79
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 80
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 81
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 82
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 83
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 84
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 85
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 86
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 87
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 88
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 89
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 90
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 91
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 92
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 93
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 94
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 95
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x40002c
+cycle 96
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 97
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+EX: branch_add: 400018, next_add: 40002c, current_add: 0x400028
+miss pending? 0
+branch mispredicted.
+DE: LDUR X6, ... current_add: 0x40002c
+cycle 98
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 99
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 100
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 101
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 102
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 103
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 104
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 105
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 106
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 107
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 108
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 109
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 110
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 111
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 112
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 113
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 114
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 115
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 116
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 117
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 118
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 119
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 120
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 121
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 122
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 123
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 124
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 125
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 126
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 127
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 128
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 129
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 130
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 131
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 132
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 133
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 134
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 135
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 136
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 137
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 138
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 139
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 140
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 141
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 142
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 143
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 144
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 145
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 146
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 147
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 148
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 149
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 150
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 151
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 152
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 153
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 154
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 155
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 156
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 157
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 158
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 159
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 160
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 161
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 162
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 163
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 164
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 165
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 166
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 167
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 168
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 169
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 170
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 171
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 172
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 173
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 174
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 175
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 176
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 177
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 178
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 179
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 180
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 181
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 182
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 183
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 184
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 185
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 186
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 187
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 188
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 189
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 190
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 191
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 192
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 193
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 194
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 195
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 196
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 197
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 198
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 199
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 200
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 201
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 202
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 203
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 204
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 205
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 206
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 207
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 208
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 209
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 210
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 211
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 212
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 213
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 214
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 215
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 216
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 217
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 218
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 219
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 220
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 221
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 222
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 223
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 224
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 225
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 226
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 227
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 228
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 229
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 230
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 231
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 232
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 233
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 234
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 235
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 236
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 237
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 238
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 239
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 240
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 241
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 242
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 243
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 244
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 245
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 246
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 247
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 248
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 249
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 250
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 251
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 252
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 253
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 254
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 255
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 256
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 257
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 258
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 259
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 260
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 261
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 262
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 263
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 264
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 265
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 266
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 267
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 268
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 269
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 270
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 271
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 272
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 273
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 274
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 275
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 276
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 277
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 278
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 279
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 280
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 281
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 282
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 283
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 284
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 285
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 286
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 287
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 288
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 289
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 290
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 291
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 292
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 293
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 294
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 295
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 296
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 297
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 298
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 299
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 300
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 301
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 302
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 303
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 304
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 305
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 306
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 307
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 308
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 309
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 310
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 311
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 312
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 313
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 314
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 315
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 316
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 317
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 318
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 319
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 320
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 321
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 322
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 323
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 324
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 325
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 326
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 327
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 328
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 329
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 330
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 331
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 332
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 333
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 334
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 335
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 336
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 337
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 338
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 339
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 340
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 341
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 342
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 343
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 344
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 345
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 346
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 347
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 348
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 349
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 350
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 351
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 352
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 353
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 354
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 355
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 356
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 357
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 358
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 359
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 360
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 361
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 362
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 363
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 364
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 365
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 366
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 367
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 368
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 369
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 370
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 371
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 372
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 373
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 374
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 375
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 376
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 377
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 378
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 379
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 380
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 381
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 382
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 383
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 384
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 385
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 386
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 387
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 388
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 389
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 390
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 391
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 392
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 393
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 394
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 395
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 396
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 397
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 398
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 399
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 400
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 401
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 402
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 403
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 404
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 405
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 406
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 407
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 408
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 409
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 410
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 411
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 412
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 413
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 414
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 415
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 416
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 417
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 418
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 419
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 420
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 421
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 422
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 423
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 424
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 425
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 426
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 427
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 428
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 429
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 430
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 431
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 432
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 433
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 434
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 435
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 436
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 437
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 438
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 439
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 440
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 441
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 442
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 443
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 444
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 445
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 446
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 447
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 448
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 449
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 450
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 451
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 452
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 453
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 454
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 455
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 456
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 457
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 458
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 459
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 460
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 461
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 462
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 463
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 464
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 465
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 466
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 467
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 468
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 469
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 470
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 471
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 472
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 473
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 474
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 475
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 476
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 477
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 478
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 479
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 480
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 481
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 482
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 483
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 484
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 485
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 486
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 487
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 488
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 489
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 490
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 491
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 492
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 493
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 494
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 495
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 496
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 497
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 498
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 499
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 500
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 501
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 502
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 503
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 504
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 505
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 506
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 507
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 508
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 509
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 510
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 511
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 512
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 513
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 514
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 515
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 516
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 517
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 518
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 519
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 520
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 521
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 522
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 523
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 524
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 525
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 526
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 527
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 528
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 529
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 530
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 531
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 532
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 533
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 534
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 535
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 536
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 537
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 538
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 539
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 540
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 541
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 542
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 543
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 544
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+Branch predicted correctly or untaken
+DE: ADD X2, ... current_add: 0x400018
+Caching address: 0x40001c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40001c, predicted_(next)_address: 0x400020
+cycle 545
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: ADD, memRead? 0, rt: 2, rn: 2, rm: 100
+DE: STUR X4, ... current_add: 0x40001c
+Caching address: 0x400020
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400020, predicted_(next)_address: 0x400024
+cycle 546
+
+WB: Branched X0, ..., writeBack: 0
+MEM: ADD X2, ...
+EX: STUR, memRead? 0, rt: 4, rn: 1, rm: 100
+DE: STUR X5, ... current_add: 0x400020
+Caching address: 0x400024
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400024, predicted_(next)_address: 0x400028
+cycle 547
+
+WB: ADD X2, ..., writeBack: 1
+MEM: STUR X4, ...
+Caching address: 0x10000000
+dCache Hit
+EX: STUR, memRead? 0, rt: 5, rn: 1, rm: 100
+DE: CMP X31, ... current_add: 0x400024
+Caching address: 0x400028
+iCache hit
+FETCH: bp->HIT: 1, current_address: 0x400028, predicted_(next)_address: 0x400018
+cycle 548
+
+WB: STUR X4, ..., writeBack: 0
+MEM: STUR X5, ...
+Caching address: 0x10000008
+dCache Hit
+EX: CMP, memRead? 0, rt: 31, rn: 3, rm: 2
+DE: BGT X0, ... current_add: 0x400028
+Caching address: 0x400018
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400018, predicted_(next)_address: 0x40001c
+cycle 549
+
+WB: STUR X5, ..., writeBack: 0
+MEM: CMP X31, ...
+EX: BGT, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: ADD X2, ... current_add: 0x400018
+cycle 550
+
+WB: CMP X31, ..., writeBack: 0
+MEM: Branched X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: flush X0, ... current_add: 0x0
+Caching address: 0x40002c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40002c, predicted_(next)_address: 0x400030
+cycle 551
+
+WB: Branched X0, ..., writeBack: 0
+MEM: flush X0, ...
+EX: flush, memRead? 0, rt: 0, rn: 0, rm: 100
+DE: LDUR X6, ... current_add: 0x40002c
+Caching address: 0x400030
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400030, predicted_(next)_address: 0x400034
+cycle 552
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: flush X0, ...
+EX: LDUR, memRead? 1, rt: 6, rn: 1, rm: 100
+DE: LDUR X7, ... current_add: 0x400030
+Caching address: 0x400034
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400034, predicted_(next)_address: 0x400038
+cycle 553
+
+WB: flush X0, ..., writeBack: 0
+flushed
+MEM: LDUR X6, ...
+Caching address: 0x10000000
+dCache Hit
+EX: LDUR, memRead? 1, rt: 7, rn: 1, rm: 100
+     stalled Load1
+DE: ADD X8, ... current_add: 0x400034
+Caching address: 0x400038
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x400038, predicted_(next)_address: 0x40003c
+cycle 554
+
+WB: LDUR X6, ..., writeBack: 2
+MEM: LDUR X7, ...
+Caching address: 0x10000008
+dCache Hit
+EX: ADD, memRead? 0, rt: 8, rn: 6, rm: 7
+cycle 555
+
+WB: LDUR X7, ..., writeBack: 2
+rmVal: 4
+MEM: bubble X0, ...
+EX: ADD, memRead? 0, rt: 8, rn: 6, rm: 7
+DE: ADD X9, ... current_add: 0x400038
+Caching address: 0x40003c
+iCache hit
+FETCH: bp->HIT: 0, current_address: 0x40003c, predicted_(next)_address: 0x400040
+cycle 556
+
+WB: bubble X0, ..., writeBack: 0
+MEM: ADD X8, ...
+EX: ADD, memRead? 0, rt: 9, rn: 8, rm: 2
+DE: HLT X0, ... current_add: 0x40003c
+Caching address: 0x400040
+iCache miss
+cycle 557
+
+WB: ADD X8, ..., writeBack: 1
+MEM: ADD X9, ...
+EX: HLT, memRead? 0, rt: 0, rn: 0, rm: 100
+cycle 558
+
+WB: ADD X9, ..., writeBack: 1
+MEM: HLT X0, ...
+EX: HLT, memRead? 0, rt: 0, rn: 0, rm: 100
+cycle 559
+
+WB: HLT X0, ..., writeBack: 0
+MEM: HLT X0, ...
+EX: HLT, memRead? 0, rt: 0, rn: 0, rm: 100
+Simulator halted
+
+ARM-SIM> 
+
+Current register/bus values :
+-------------------------------------
+Instruction Retired : 511
+PC                : 0x400040
+Registers:
+X0: 0x0
+X1: 0x10000000
+X2: 0x64
+X3: 0x64
+X4: 0x3
+X5: 0x4
+X6: 0x3
+X7: 0x4
+X8: 0x7
+X9: 0x6b
+X10: 0x0
+X11: 0x0
+X12: 0x0
+X13: 0x0
+X14: 0x0
+X15: 0x0
+X16: 0x0
+X17: 0x0
+X18: 0x0
+X19: 0x0
+X20: 0x0
+X21: 0x0
+X22: 0x0
+X23: 0x0
+X24: 0x0
+X25: 0x0
+X26: 0x0
+X27: 0x0
+X28: 0x0
+X29: 0x0
+X30: 0x0
+X31: 0x0
+FLAG_N: 0
+FLAG_Z: 1
+No. of Cycles: 560
+
+ARM-SIM> 

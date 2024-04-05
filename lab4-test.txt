@@ -1,0 +1,24 @@
+lab4-test.txt
+---------
+
+Section 1: cycle-by-cycle comparison
+Test: br_same.x
+Reference simulator cycle count: 36
+Student simulator cycle count: 36
+Number of matching cycles: 36
+
+Test: cancel_req.x
+Reference simulator cycle count: 354
+Student simulator cycle count: 354
+Number of matching cycles: 354
+
+Test: ld.x
+Reference simulator cycle count: 49
+Student simulator cycle count: 49
+Number of matching cycles: 39
+
+Test: st_loop.x
+Reference simulator cycle count: 561
+Student simulator cycle count: 561
+Number of matching cycles: 561
+
